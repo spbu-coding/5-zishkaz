@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 void other() {
 
@@ -13,6 +12,7 @@ void input() {
     printf("Enter a line:\n");
 	fflush(stdout);
     scanf("%s", buf);
+    printf("%p\n", &other);
     printf("Line: %s\n", buf);
 	fflush(stdout);
 
